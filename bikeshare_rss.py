@@ -22,7 +22,7 @@ def get_filters():
     print('\nIf you want to exit just input "exit" at any time\n')
 
     #Ask the user for information related to city, the loop only accept cities in actual data base
-    cities = ('chicago', 'new york city', 'washington')
+    cities = (CITY_DATA.keys())
     while True:
         city = input("\nPlease enter the city you want to know (hint: we operate in Chicago, New York City and Washington): \n").lower()
         if city in cities: #Ask if inout is in allowed group of data, if correct finish the check loop.
