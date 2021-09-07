@@ -4,7 +4,7 @@
 2021/09/07
 
 ### Project Title
-Bikeshare Query
+Bikeshare query with user input
 
 ### Description
 Script with user interactive input to see information about different cities,
