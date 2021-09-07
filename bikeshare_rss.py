@@ -218,7 +218,7 @@ def ask_fordata(df):
         user_input_access = input('\nWould you like to see raw data? (y or n)\n').lower()
         if user_input_access == 'y':
             number = number + 1
-            print(df.iloc[(number-1)*5:number*5])
+            print(df.iloc[(number-1)*5:number*5]) #formula to iterate 5 raws every time
             continue
         elif user_input_access == 'n':
             break
