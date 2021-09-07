@@ -118,16 +118,12 @@ def time_stats(df):
 
     # display the most common month tranformed from integer
     df['month'] = df['Start Time'].dt.month
-    most_common_month = df['month'].mode()
-    most_common_month = int(most_common_month)
-    most_common_month = calendar.month_name[most_common_month]
+    most_common_month = calendar.month_name[int(df['month'].mode())]
     print('Most common month is: ', most_common_month)
 
     # display the most common day of week tranformed from integer
     df['day_of_week'] = df['Start Time'].dt.weekday
-    most_common_day = df['day_of_week'].mode()
-    most_common_day = int(most_common_day)
-    most_common_day = calendar.day_name[most_common_day]
+    most_common_day = calendar.day_name[int(df['day_of_week'].mode())]
     print('Most common day is: ', most_common_day)
 
     # display the most common start hour transformed to integer
